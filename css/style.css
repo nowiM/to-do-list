@@ -1,0 +1,112 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "spongebob";
+    src: url("../font/BlobSpongeyLowercase.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 이미지를 배경화면으로 설정*/
+.background {
+    filter: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    opacity: 80%;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* header clock */
+.header .clock {
+    font-family: "spongebob", sans-serif;
+    font-size: 25px;
+}
+
+/*header weather*/
+.header .weather > span {
+    font-family: "spongebob", sans-serif;
+    font-size: 20px;
+}
+
+/* ToDo */
+.toDo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.toDo .toDoContainer {
+    padding-top: 6vh;
+}
+
+.toDo .toDoContainer .toDoForm .toDoInput {
+    width: 30vw;
+    height: 7vh;
+    background: transparent;
+    font-family: "spongebob", sans-serif;
+    font-size: 3vw;
+    text-align: center;
+    border: none;
+    border-bottom: 3px solid #000000;
+}
+
+.toDo .toDoContainer .toDoForm .toDoInput:focus {
+    outline: none;
+}
+
+.toDo .toDoContainer .toDoForm .toDoInput::placeholder {
+    color: #000000;
+    font-family: "spongebob", sans-serif;
+    font-size: 4vw;
+}
+
+.toDo .toDoContainer .toDoList {
+    max-height: 65vh;
+    overflow-y: scroll;
+    list-style: none;
+    margin-top: 3vh;
+}
+
+.toDo .toDoContainer .toDoList > li {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-family: "spongebob", sans-serif;
+    font-size: 3vw;
+    border-radius: 30px;
+}
+
+.toDo .toDoContainer .toDoList > li:hover {
+    background-color: #afd7cd;
+}
+
+.toDo .toDoContainer .toDoList li .spanCick {
+    text-decoration-line: line-through
+}
+
+.toDo .toDoContainer .toDoList li > button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #ff0000;
+    font-size: 2vw;
+    font-family: "spongebob", sans-serif;
+    padding-left: 1vw;
+}

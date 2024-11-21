@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>My ToDo List</title>
+</head>
+<body>
+    <!-- 배경이미지 -->
+    <img class="background" src="../img/background.png" />
+    
+    <!-- header -->
+    <div class="header">
+        <!-- header clock-->
+        <span class="clock"></span>
+        <!-- header weather-->
+        <div class="weather">
+            <span class="city"></span>
+            <span class="weatherInner"></span>
+            <span class="Ctemper"></span>
+        </div>
+    </div>
+
+    <!-- 투두리스트 -->
+    <div class="toDo">
+        <div class="toDoContainer">
+            <!-- todoForm -->
+            <form class="toDoForm">
+                <input class="toDoInput" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Input To-DoList'" required />
+            </form>
+
+            <!-- toDoList -->
+            <ul class="toDoList"></ul>
+            <img class="figer" src="/Project/MyToDoList/img/finger.png" style="display: none;" />
+        </div>
+    </div>
+
+    <script src="../js/clock.js"></script> <!-- clock.js-->
+    <script src="../js/weather.js"></script><!-- weather.js -->
+    <script src="../js/todo.js"></script> <!-- todo.js-->
+</body>
+</html>
